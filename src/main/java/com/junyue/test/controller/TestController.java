@@ -13,4 +13,8 @@ public class TestController {
     public String sayHello(@PathVariable String name){
         return name+" said: Hello Jenkins";
     }
+    @GetMapping("/testJenkins")
+    public String testJenkins(){
+        return "You have successfully accessed Jenkins";
+    }
 }
